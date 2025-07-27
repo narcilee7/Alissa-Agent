@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2022"],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "@alissa/core/*": ["packages/core/src/*"],
+      "@alissa/shared/*": ["packages/shared/src/*"],
+      "@alissa/database/*": ["packages/database/src/*"],
+      "@alissa/kafka/*": ["packages/kafka/src/*"],
+      "@alissa/monitoring/*": ["packages/monitoring/src/*"],
+      "@alissa/providers/*": ["packages/providers/src/*"],
+      "@alissa/services/*": ["packages/services/src/*"],
+      "@alissa/tools/*": ["packages/tools/src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}

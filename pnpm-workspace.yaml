@@ -1,0 +1,10 @@
+packages:
+  # 应用层
+  - 'apps/*'
+  # 共享包
+  - 'packages/*'
+  # 排除测试和构建文件
+  - '!**/node_modules/**'
+  - '!**/dist/**'
+  - '!**/build/**'
+  - '!**/coverage/**'

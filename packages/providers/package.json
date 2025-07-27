@@ -1,0 +1,29 @@
+{
+  "name": "@alissa/providers",
+  "version": "0.0.1",
+  "description": "LLM providers integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:unit": "vitest run --reporter=verbose",
+    "test:coverage": "vitest run --coverage",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@alissa/shared": "workspace:*",
+    "@alissa/monitoring": "workspace:*",
+    "openai": "^4.20.1",
+    "axios": "^1.6.2",
+    "zod": "^3.22.4",
+    "retry": "^0.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}

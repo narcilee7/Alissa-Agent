@@ -12,7 +12,7 @@
 - **Web框架**: Fastify 4.x (高性能、低开销)
 - **API文档**: OpenAPI 3.0 + Swagger
 - **数据库**: 
-  - PostgreSQL 15.x (主数据库)
+  - Mysql (主数据库)
   - Redis 7.x (缓存、会话)
   - Qdrant (向量数据库)
 - **ORM**: Prisma 5.x
@@ -24,7 +24,7 @@
 - **测试**: Vitest
 
 ### AI/ML相关
-- **OpenAI SDK**: openai
+- **OpenAI SDK**: openai, moonshot, qwen, deepseak
 - **向量数据库客户端**: @qdrant/js-client
 - **LangChain**: langchain (Node.js版本)
 - **嵌入模型**: @xenova/transformers (本地嵌入)

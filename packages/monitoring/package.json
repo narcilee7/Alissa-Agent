@@ -1,0 +1,27 @@
+{
+  "name": "@alissa/monitoring",
+  "version": "0.0.1",
+  "description": "Logging, metrics and tracing",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:unit": "vitest run --reporter=verbose",
+    "test:coverage": "vitest run --coverage",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@alissa/shared": "workspace:*",
+    "winston": "^3.11.0",
+    "pino": "^8.17.0",
+    "prom-client": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}
